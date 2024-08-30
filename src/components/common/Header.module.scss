@@ -1,0 +1,39 @@
+.header {
+  display: flex;
+  height: 4rem;
+  background-color: rgb(255, 206, 27);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+}
+
+.tab {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 8rem;
+  font-size: 1.25rem;
+  font-weight: 900;
+  color: white;
+  text-shadow: 0 0 4px black;
+  cursor: pointer;
+  position: relative;
+  &:hover {
+    background-color: rgb(255, 193, 23);
+  }
+}
+
+// .activeTab {
+//   background-color: rgb(255, 166, 0);
+// }
+
+.activeTabIndicator {
+  background-color: rgb(255, 132, 0);
+  height: 0.5rem;
+  width: 8rem;
+  position: absolute;
+  bottom: 0;
+  transition: all 0.2s;
+}
