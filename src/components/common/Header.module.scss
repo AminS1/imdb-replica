@@ -2,10 +2,10 @@
   display: flex;
   height: 4rem;
   background-color: rgb(255, 206, 27);
-  position: fixed;
+  position: relative;
   width: 100%;
-  top: 0;
-  z-index: 100;
+  // top: 0;
+  // z-index: 100;
 }
 
 .tab {
@@ -20,6 +20,7 @@
   text-shadow: 0 0 4px black;
   cursor: pointer;
   position: relative;
+  text-decoration: none;
   &:hover {
     background-color: rgb(255, 193, 23);
   }
