@@ -14,3 +14,5 @@ export const Tabs: Tab[] = [
     path: "/favorites",
   },
 ];
+
+export const ImageBaseUrl = "https://image.tmdb.org/t/p/w500";

@@ -14,6 +14,7 @@ const Header: React.FC<IProps> = ({ tabs }) => {
     <div className={classes.header}>
       {tabs.map((tab: Tab, index: number) => (
         <NavLink
+          key={index}
           className={({ isActive }) => {
             isActive && setActiveTabIndex(index);
             return `${classes.tab} ${isActive ? classes.activeTab : ""}`;

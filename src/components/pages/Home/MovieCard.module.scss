@@ -4,6 +4,7 @@
   color: white;
   border-radius: 0.5rem;
   overflow: hidden;
+  cursor: pointer;
   .poster {
     width: 100%;
   }
@@ -12,6 +13,12 @@
     .rating {
       font-weight: 700;
       color: rgba(255, 255, 255, 0.75);
+      display: flex;
+      align-items: center;
+      .starIcon {
+        height: 0.85rem;
+        color: rgb(245, 197, 24);
+      }
     }
     .title {
       font-size: 1rem;

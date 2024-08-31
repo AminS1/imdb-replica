@@ -5,7 +5,9 @@ import { useMovies } from "../../../hooks";
 
 const Home = () => {
   const { movies } = useMovies();
-  const [currentMovie, setCurrentMovie] = useState(0);
+  const [currentMovie, setCurrentMovie] = useState(
+    Math.round(Math.random() * (movies?.length || 0))
+  );
   const [fade, setFade] = useState(true);
   const [blur, setBlur] = useState(0);
   const handleScroll = () => {
@@ -21,7 +23,7 @@ const Home = () => {
       setFade(false);
 
       timer2 = setTimeout(() => {
-        movies && setCurrentMovie((prev) => (prev + 1) % movies.length);
+        movies && setCurrentMovie(Math.round(Math.random() * movies.length));
         setFade(true);
       }, 500);
     }, 5000);

@@ -1,0 +1,82 @@
+.movieHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .left {
+    align-self: flex-end;
+    .title {
+      font-size: 4rem;
+    }
+    .releaseNRuntime {
+      font-size: 0.875em;
+      color: rgba(255, 255, 255, 0.7);
+    }
+  }
+  .right {
+    display: flex;
+    .imdbRating {
+      margin-right: 0.5rem;
+      padding: 0.25rem;
+      .IMDB_RATING {
+        color: rgba(255, 255, 255, 0.7);
+        font-size: 1rem;
+        font-weight: 600;
+        margin-bottom: 0.25rem;
+      }
+      .ratingContainer {
+        display: flex;
+        align-items: center;
+
+        .starIcon {
+          padding: 0.25rem;
+          height: 2rem;
+          width: 2rem;
+          color: rgb(245, 197, 24);
+          margin-right: 0.25rem;
+        }
+        .rating {
+          .ratingValue {
+            font-size: 1.25rem;
+            font-weight: 600;
+            .outOf {
+              font-size: 1rem;
+              font-weight: 400;
+              color: rgba(255, 255, 255, 0.7);
+            }
+          }
+          .ratingCount {
+            font-size: 0.75rem;
+            font-weight: 400;
+            color: rgba(255, 255, 255, 0.7);
+          }
+        }
+      }
+    }
+    .yourRating {
+      padding: 0.25rem;
+      .YOUR_RATING {
+        color: rgba(255, 255, 255, 0.7);
+        font-size: 1rem;
+        font-weight: 600;
+        margin-bottom: 0.25rem;
+      }
+      .ratingContainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: rgb(87, 153, 239);
+        .hollowStarIcon {
+          // padding: 0.25rem;
+          height: 2rem;
+          width: 2rem;
+          margin-right: 0.25rem;
+        }
+        .RATE {
+          font-size: 1.25rem;
+          font-weight: 600;
+          margin-right: 0.25rem;
+        }
+      }
+    }
+  }
+}

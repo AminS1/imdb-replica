@@ -1,0 +1,37 @@
+.movieContent {
+  margin-top: 20px;
+  width: 100%;
+
+  .posters {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 26.125rem;
+    div {
+      height: 100%;
+      img {
+        height: 100%;
+      }
+    }
+  }
+  .genres {
+    margin-top: 0.75rem;
+    display: flex;
+    gap: 0.5rem;
+    :hover {
+      cursor: pointer;
+      background-color: rgba(255, 255, 255, 0.07);
+    }
+    .genre {
+      padding: 0.5rem 0.75rem;
+      border-radius: 1rem;
+      border: 1px solid rgba(255, 255, 255, 0.32);
+      font-size: 0.875rem;
+      line-height: 100%;
+    }
+  }
+  .overview {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+  }
+}

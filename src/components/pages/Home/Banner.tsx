@@ -1,3 +1,5 @@
+import { useNavigate } from "react-router-dom";
+import { ImageBaseUrl } from "../../../utils/constants";
 import { Movie } from "../../../utils/types";
 import classes from "./Banner.module.scss";
 
@@ -8,16 +10,21 @@ interface BannerProps {
 }
 
 const Banner: React.FC<BannerProps> = ({ blur, movie, fade }) => {
+  const navigate = useNavigate();
+  const bannerClickHandler = () => {
+    navigate(`/movie/${movie.id}`);
+  };
   return (
     <div
       className={classes.banner}
       style={
         {
           "--blur-value": `${blur}px`,
-          "--img-value": `url("https://image.tmdb.org/t/p/w500${movie.backdrop_path}")`,
+          "--img-value": `url("${ImageBaseUrl}${movie.backdrop_path}")`,
           "--opacity-value": fade ? 1 : 0,
         } as React.CSSProperties
       }
+      onClick={bannerClickHandler}
     >
       <div className={classes.darken}>
         <div className={classes.details}>

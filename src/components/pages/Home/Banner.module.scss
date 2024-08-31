@@ -5,6 +5,7 @@
   position: relative;
   transition: opacity 0.5s ease-in-out;
   opacity: var(--opacity-value);
+  cursor: pointer;
   &::before {
     content: "";
     position: absolute;
