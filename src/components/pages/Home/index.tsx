@@ -6,7 +6,7 @@ import { useMovies } from "../../../hooks";
 const Home = () => {
   const { movies } = useMovies();
   const [currentMovie, setCurrentMovie] = useState(
-    Math.round(Math.random() * (movies?.length || 0))
+    Math.round(Math.random() * 10)
   );
   const [fade, setFade] = useState(true);
   const [blur, setBlur] = useState(0);

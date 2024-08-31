@@ -5,6 +5,7 @@
   border-radius: 0.5rem;
   overflow: hidden;
   cursor: pointer;
+  position: relative;
   .poster {
     width: 100%;
   }
@@ -24,6 +25,9 @@
       font-size: 1rem;
       font-weight: 700;
       margin-top: 0.5rem;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
     }
     .trailer {
       display: flex;

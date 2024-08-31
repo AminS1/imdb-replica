@@ -3,6 +3,7 @@ import classes from "./MovieCard.module.scss";
 import { ReactComponent as StarIcon } from "../../../icons/star.svg";
 import { ReactComponent as PlayIcon } from "../../../icons/play.svg";
 import { ImageBaseUrl } from "../../../utils/constants";
+import AddTo from "../../common/AddTo";
 interface MovieCardProps {
   movie: Movie;
   movieClickHandler: () => void;
@@ -11,6 +12,7 @@ interface MovieCardProps {
 const MovieCard: React.FC<MovieCardProps> = ({ movie, movieClickHandler }) => {
   return (
     <div className={classes.movieCard} onClick={movieClickHandler}>
+      <AddTo />
       <img
         src={`${ImageBaseUrl}${movie.poster_path}`}
         alt={movie.title}

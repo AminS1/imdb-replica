@@ -1,5 +1,6 @@
 import { ImageBaseUrl } from "../../../utils/constants";
 import { ExtendedMovie } from "../../../utils/types";
+import AddTo from "../../common/AddTo";
 import classes from "./MovieContent.module.scss";
 
 interface MovieContentProps {
@@ -11,6 +12,7 @@ const MovieContent: React.FC<MovieContentProps> = ({ movie }) => {
     <div className={classes.movieContent}>
       <div className={classes.posters}>
         <div className={classes.moviePoster}>
+          <AddTo />
           <img src={ImageBaseUrl + movie.poster_path} alt={movie.title} />
         </div>
         <div className={classes.movieBackdrop}>

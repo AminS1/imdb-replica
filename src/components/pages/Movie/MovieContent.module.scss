@@ -7,7 +7,20 @@
     align-items: center;
     justify-content: space-between;
     height: 26.125rem;
-    div {
+    .moviePoster {
+      position: relative;
+      height: 100%;
+      img {
+        height: 100%;
+      }
+    }
+    .movieBackdrop {
+      height: 100%;
+      img {
+        height: 100%;
+      }
+    }
+    .collectionPoster {
       height: 100%;
       img {
         height: 100%;
